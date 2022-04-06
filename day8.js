@@ -100,7 +100,8 @@ const scores = [
   // Find the topper's name
   // Expected Output
   // "Debra Beard"
-  
+  const topper = scores.reduce((winner,stu)=>winner.marks>stu.marks?winner:stu)
+  console.log(topper.name)
   // Only use
   // map, reduce, filter & destructuring
   
