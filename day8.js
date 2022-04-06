@@ -66,8 +66,8 @@ const scores = [
   //     name: "Nettie Hancock"
   //   }]
 
-  const studentsPaseed = scores.filter(stu => stu.marks>=40)
-  console.log(studentsPaseed)
+  const studentsPassed = scores.filter(stu => stu.marks>=40)
+  console.log(studentsPassed)
   
   // Task 3
   //  Find all the names who failed the exams (Array methods)
