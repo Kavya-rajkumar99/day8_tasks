@@ -1,15 +1,3 @@
-const avengers = [
-    "Black Widow",
-    "Hulk",
-    "Iron Man",
-    "Spider Man",
-    "Thor",
-    "Captain America"
-]
-
-// var names = avengers.filter(name=>name.length>=10)
-// console.log(names)
-
 const scores = [
     {
       marks: 32,
@@ -79,18 +67,18 @@ const scores = [
   // ];
    
     //Method 1
-    const output1 = scores.filter(stu => stu.marks<40).map(stu => stu.name);
-    console.log(output1)
+    const failedStuNames = scores.filter(stu => stu.marks<40).map(stu => stu.name);
+    console.log(failedStuNames)
     
     //Method2
-    const output2 = scores.reduce((acc,curr) =>{
+    const failedStuNames = scores.reduce((acc,curr) =>{
       if(curr.marks<40)
       {
         acc.push(curr.name)
       }
       return acc
     },[])
-    console.log(output2)
+    console.log(failedStuNames)
 
   // Task 4
   // Find the Average marks
