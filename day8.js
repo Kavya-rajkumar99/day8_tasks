@@ -94,8 +94,12 @@ const scores = [
 
   // Task 4
   // Find the Average marks
+  // Method 1   
   const averageMarks = (scores.map(stu=>stu.marks).reduce((acc,curr)=>acc+curr,0))/scores.length;
   console.log(averageMarks)
+  // Method2
+  const totalMarks = scores.reduce((acc,curr) => acc + curr.marks,0)
+  console.log(Number(totalMarks/scores.length).toFixed(2))
   // Task 5
   // Find the topper's name
   // Expected Output
